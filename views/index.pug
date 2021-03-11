@@ -1,0 +1,30 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            li #[a(href= "/index") Home]
+            li #[a(href= "/index") About]
+            li #[a(href= "/index") Services]
+            li #[a(href= "/index") Class Info]
+            li #[a(href= "/index") Contact us]
+    section#introSection
+        div Welcome to Rehan's Dance Academy
+        div.small Eat sleep Dance Repeat
+    
+    section#sponsorsSection
+        h3 Our Sponsors
+        div#sponsors
+              img(src="/static/logo.jpg" , alt = "sponsor Image" ,class = "spImage")
+
+
+    footer#footer
+        | Copyright 1999-2020 by Refsnes Data. All Rights Reserved.
+        div RDA is Powered by Rehan
+
+    script
+      include ../static/index.js
